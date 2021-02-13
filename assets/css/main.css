@@ -129,7 +129,7 @@
     height: 16px;
 }
 
-.header__notify{
+.header__notify {
     position: absolute;
     top: 118%;
     right: 0;
@@ -140,6 +140,26 @@
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+
+.header__notify::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 90px;
+    height: 15px;
 }
 
 @keyframes headerNotifyGrowth {
