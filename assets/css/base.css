@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --botder-color: #dbdbdb;
 }
 
 * {
@@ -67,6 +68,19 @@ html {
     border-radius: 5px;
 }
 
-.modal__inner {
+/* Button style */
 
+.btn {
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
