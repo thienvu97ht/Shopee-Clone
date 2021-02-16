@@ -29,7 +29,7 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -79,8 +79,8 @@
     height: 10px;
 }
 
-.header__navbar-user-item {
-
+.header__navbar-user-item-separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -116,7 +116,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -155,6 +155,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -216,13 +220,15 @@
 
 .header__notify {
     position: absolute;
+    z-index: 1;
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     -webkit-animation: headerNotifyGrowth ease-in 0.2s;
     -moz-animation: headerNotifyGrowth ease-in 0.2s;
@@ -487,6 +493,11 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img {
