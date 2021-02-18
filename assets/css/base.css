@@ -225,10 +225,6 @@ html {
     background-color: #ED5C3F;
 }
 
-.pagination-item__icon {
-
-}
-
 .pagination-item__link {
     --height: 30px;
     display: block;
