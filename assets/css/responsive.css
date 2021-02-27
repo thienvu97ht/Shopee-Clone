@@ -8,6 +8,30 @@
     .hide-on-mobile-tablet {
         display: none;
     }
+
+    .header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .app__container {
+        margin-top: var(--header-height);
+    }
+    
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .header__cart-list::after {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -20,6 +44,8 @@
         width: 80px;
         text-align: right;
     }
+
+
 }
 
 /* Mobile */
