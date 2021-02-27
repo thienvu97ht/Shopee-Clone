@@ -107,7 +107,7 @@
 
 .header__navbar-item--has-qr:hover .header__qr{
     display: block;
-    z-index: ;
+    z-index: 2;
 }
 
 .header__navbar-item--has-notify:hover .header__notify {
